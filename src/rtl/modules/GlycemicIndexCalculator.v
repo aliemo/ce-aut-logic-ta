@@ -24,17 +24,12 @@ input [7:0] bloodSensor;
 output [3:0] glycemicIndex;
 
 reg [3:0] onesCount;
-reg [7:0] absuloteValue ;
+wire [7:0] absuloteValue ;
 integer i;
-
-	always @(bloodSensor)
+	assign absuloteValue = (bloodSensor[7] == 1'b1)? -bloodSensor: bloodSensor;
+	always @(absuloteValue)
 	begin
 		onesCount = 0;
-		absuloteValue = bloodSensor;
-		if (bloodSensor[7] == 1)
-		begin
-			absuloteValue = -bloodSensor;
-		end
 		for (i = 0; i <= 7; i = i+1) begin
 			if (absuloteValue[i] == 1) begin
 				onesCount = onesCount + 1;

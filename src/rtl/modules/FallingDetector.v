@@ -27,14 +27,13 @@ output fallDetected;
 
 wire pEqualToQ, pGreaterThanQ;
 
-
 	Comparator8Bit Comparator8BitUnit(
 		.inputP             (fdSensorValue),
 		.inputQ             (fdFactoryValue),
 		.pEqualToQ          (pEqualToQ),
 		.pGreaterThanQ(pGreaterThanQ)
 		);
-   
+		
    assign fallDetected = pEqualToQ | pGreaterThanQ;
 
 endmodule

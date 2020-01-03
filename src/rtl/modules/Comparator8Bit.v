@@ -18,17 +18,14 @@
 module Comparator8Bit(
         inputP,
         inputQ,
-        pLessThanQ,
         pEqualToQ,
         pGreaterThanQ
         );
 input [7:0] inputP;
 input [7:0] inputQ;
-output pLessThanQ;
 output pEqualToQ;
 output pGreaterThanQ;
 
-   assign pLessThanQ = inputP < inputQ ;
    assign pEqualToQ = inputP == inputQ ;
    assign pGreaterThanQ = inputP > inputQ ;
    
