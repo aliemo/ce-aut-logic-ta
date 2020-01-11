@@ -12,7 +12,7 @@
 ** Student ID: XXXXXXX
 ** Student ID: XXXXXXX
 **********************************************************
-** Module Name: LogicHealthcareSystem
+** Module Name: HealthcareSystemFirstPhase
 **********************************************************
 ** Additional Comments:
 */
