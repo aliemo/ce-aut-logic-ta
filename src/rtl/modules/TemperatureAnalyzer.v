@@ -22,6 +22,6 @@ module TemperatureAnalyzer(
 input [7:0] temperature;
 output temperatureAbnormality;
 
-  assign temperatureAbnormality = (temperature > 39) || (temperature < 35);
-
+	// write your code here
+	
 endmodule

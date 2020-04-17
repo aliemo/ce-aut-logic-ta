@@ -23,6 +23,5 @@ module PressureAnalyzer(
 input [4:0] pData;
 output pWarning;
    
-   assign pWarning = !((pData >= 8) && (pData <= 22));
-   
+	// write your code here
 endmodule

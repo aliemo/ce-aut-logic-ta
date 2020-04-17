@@ -27,6 +27,6 @@ input [3:0] factoryTempCoef;
 input [3:0] tempSensorValue;
 output [7:0] temperature;
 
-	assign temperature = factoryBaseTemp + (factoryTempCoef * tempSensorValue) / 8 ;
+	// write your code here	
 	
 endmodule

@@ -25,7 +25,6 @@ input [3:0] bloodPH;
 output abnormalityP;
 output abnormalityQ;
    
-	assign abnormalityP = (bloodPH == 4'b0111) || (bloodPH == 4'b1000);
-	assign abnormalityQ = (bloodPH == 4'b0111) || (bloodPH == 4'b1000) || (bloodPH == 4'b0110) || (bloodPH == 4'b1001);
-
+	// write your code here
+	
 endmodule

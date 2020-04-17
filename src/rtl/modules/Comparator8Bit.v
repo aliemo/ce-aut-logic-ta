@@ -26,7 +26,6 @@ input [7:0] inputQ;
 output pEqualToQ;
 output pGreaterThanQ;
 
-   assign pEqualToQ = inputP == inputQ ;
-   assign pGreaterThanQ = inputP > inputQ ;
+   // write your code here
    
 endmodule

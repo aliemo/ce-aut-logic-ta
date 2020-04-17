@@ -25,16 +25,6 @@ output bloodClass;
 
 reg bloodClassVar;
 
-  always @(*) 
-	begin
-   	 case(bloodType[2:1])
-   			2'b00: bloodClassVar <= 1'b1;
-   			2'b01: bloodClassVar <= 1'b0;
-   			2'b10: bloodClassVar <= bloodType[0];
-   			2'b11: bloodClassVar <= 1'b0;
-   	endcase
-   end
-   
-	assign bloodClass = bloodClassVar;
-	
+  // write your code here
+ 	
 endmodule
